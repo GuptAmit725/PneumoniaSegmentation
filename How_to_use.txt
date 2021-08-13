@@ -1,0 +1,14 @@
+STEPS TO USE THIS REPO.
+
+--> Download the data
+--> Download lableme annotator (This only works with this labelme, other annotator won't work)
+--> Annotate your data(if you are using custom training) or use directly the training.json
+--> Convert all the annotations into coco format using labelme2coco.py as we are using detectron2 model which is trained on coco dataset.
+--> Zip your train data.
+--> upload zipped train data and training.json on colab @ /content/train.zip and /content/training.json
+--> unzip the train.zip
+--> Follow the instruction in the ipynb file for Detectron2 installation
+--> Start training if you are doing custom training or use the pretrained model model_final.pth
+--> Use your model for prediction.
+
+DATASET AND MODEL LINK : https://drive.google.com/drive/u/1/folders/1s4rrwwswJMwNitMqri300Py4-SII3GeP
